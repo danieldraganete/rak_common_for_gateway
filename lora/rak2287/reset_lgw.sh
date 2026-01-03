@@ -10,7 +10,7 @@ echo "[INFO] Detected board: $MODEL"
 
 # -------- GPIO & CHIP CONFIG --------
 if echo "$MODEL" | grep -q "Raspberry Pi 5"; then
-    RESET_GPIO=17  # Example for Pi5 (adjust to match concentrator reset pin)
+    RESET_GPIO=25  # Example for Pi5 (adjust to match concentrator reset pin)
     GPIO_CHIP="gpiochip4"  # RP1 GPIO typically gpiochip4
     echo "[INFO] Pi 5 detected: Using GPIO $RESET_GPIO on $GPIO_CHIP"
 else
